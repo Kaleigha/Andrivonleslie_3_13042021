@@ -4,20 +4,34 @@
         <title>Oh my food</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="sass/main.scss">
-        <link rel="stylesheet" href="sass/reset.css">
+        <link rel="stylesheet" href="./sass/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     </head>
     <body>
         <header>
-            <div><img src="./img/logo/ohmyfood.png" alt="" id="logo"></div>
+            <div><img src="./img/logo/ohmyfood.png" alt="" id="header__logo"></div>
         </header>
         <div>
             <form method="POST">
-                <input type="search" placeholder="Paris, belleville" id="searchbar"/>
+                <input type="search"  name="search" placeholder="&#xF3c5; Paris, Belleville" id="searchbar"/>
                 <label for="#"></label>
             </form>
+        </div>
+        <div id="explorer">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <button name="explorer__button" id="explorer__button" type="button">Explorer nos restaurants</button>
+        </div>
+        <div id="operation">
+            <h2>Fonctionnement</h2>
+            <ol>
+                <li><i class="fas fa-mobile-alt"></i><p>Choisissez un restaurant</p></li>
+                <li><i class="fas fa-list-ul"></i><p>Composez votre menu</p></li>
+                <li><i class="fas fa-store"></i><p>Dégustez au restaurant</p></li>
+            </ol>
         </div>
     </body>
 </html>

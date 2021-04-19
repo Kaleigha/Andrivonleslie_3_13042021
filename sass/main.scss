@@ -1,2 +1,56 @@
 @import "./utils/variable";
-@import "./base/police"
+@import "./base/fonts";
+@import "./components/button";
+@import "./layouts/contents";
+
+body{
+    height: auto;
+}
+#header__logo{
+    width: 150px;
+    height: 40px;
+}
+header div{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+#searchbar{
+    @include searchbar__background;
+}
+input::placeholder{
+    @include searchbar__text;
+}
+#explorer{
+    @include explorer__background;
+    padding: 30px;
+    &__button{
+        @include button--style;
+    }
+}
+#operation{
+   @include operation__background;
+   & ol{
+    @include operation__background;
+        list-style: none; 
+        counter-reset: li;
+        height: 400px;
+        width: 100%; 
+        & li{
+            @include operation__list;
+            list-style-type: none;
+            counter-increment: li;
+                & ::before{
+                    content : counter(li);
+                    background-color: $color-primary;
+                    border-radius: 30px 30px;
+                    font-weight: bold;
+	                font-size: 0.8em;
+	                color: $text--color;
+                    width: 30px;
+                }
+        }    
+    }
+}

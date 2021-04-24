@@ -2,10 +2,21 @@ h2 , #logo{
     font-family: 'Shrikhand', cursive;
     font-size: 20px; 
 }
-p , button{
-    font-family: 'Roboto', sans-serif; 
+p , button , a{
+    font-family: 'Roboto', sans-serif;
+    color: $text--color; 
 }
 input{
     font-family: "Font Awesome 5 Free",'Roboto', sans-serif;
     font-weight: 900;
+}
+h3{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: $text--color;
+}
+a{
+    text-decoration: none;
 }

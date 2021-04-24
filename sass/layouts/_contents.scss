@@ -23,6 +23,7 @@
     justify-content: space-around;
     align-items: flex-start;
     height: 500px;
+    width: 100%;
 }
 @mixin operation__list{
     background-color: $grey--light;
@@ -30,7 +31,78 @@
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 50px;
     border-radius: 30px 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+@mixin operation--number{
+    background-color: $color-primary;
+    border-radius: 30px 30px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+@mixin restaurants--background{
+    background-color: $grey--light;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 1300px;
+}
+@mixin restaurants__list--background{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+@mixin restaurant__menu--background{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+@mixin card--size{
+    width: 90%;
+    height: 280px;
+    border-radius: 30px 30px;
+    background-color: $white;
+}
+@mixin card__img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+@mixin menu{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    margin: 10px;
+}
+@mixin shadow{
+    box-shadow: 3px 3px 3px $grey--dark;
+}
+@mixin footer__background{
+    padding: 30px;
+    background-color: lighten($text--color,20%);
+    color: $white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 180px;
+}
+

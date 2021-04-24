@@ -28,29 +28,87 @@ input::placeholder{
     padding: 30px;
     &__button{
         @include button--style;
+        @include shadow;
     }
 }
 #operation{
    @include operation__background;
-   & ol{
-    @include operation__background;
-        list-style: none; 
-        counter-reset: li;
-        height: 400px;
-        width: 100%; 
+   margin-top: 30px;
+    & ol{
+        @include operation__background;
+        height: 350px;
         & li{
             @include operation__list;
-            list-style-type: none;
-            counter-increment: li;
-                & ::before{
-                    content : counter(li);
-                    background-color: $color-primary;
-                    border-radius: 30px 30px;
-                    font-weight: bold;
-	                font-size: 0.8em;
-	                color: $text--color;
-                    width: 30px;
+            @include shadow;
+            &:hover{
+                background-color: lighten($color-primary,30%);
+                & .fas{
+                    color: $color-primary;
                 }
-        }    
+            }
+            & p{
+                margin-right: 100px;
+            }
+            & .operation__items{
+                @include operation--number;
+                margin-right: 10px;
+                color: $white;
+            }
+            & .fas{
+                color: $grey--dark;
+                margin-right: 10px;
+            }
+        }
     }
 }
+
+#restaurants{
+    @include restaurants--background;
+    & h2{
+        margin-top: 30px;
+    }
+    & #restaurants__list{
+        @include restaurants__list--background;
+        & .restaurant__card{
+            @include card--size;
+            @include shadow;
+            & .restaurant__menu__img{
+                @include card__img;
+            }
+            & .restaurant__menu{
+                @include restaurant__menu--background;
+                & .restaurant__menu__text{
+                    @include menu;
+                    width: 60%;
+                }
+                & .restaurant__menu__heart{
+                    @include menu;
+                    width: 20%;
+                    align-items: center;
+                    color: $text--color;
+                }
+            }
+        }
+    }
+}
+
+#footer__logo{
+    width: 100px;
+    height: 30px;
+    fill: $white !important;
+}
+footer{
+    @include footer__background;
+   & p , a{
+    color: $white;
+   }
+   & div{
+       display: flex;
+       flex-flow: row nowrap;
+       & .fas{
+           margin-right: 10px;
+       }
+   }
+}
+
+

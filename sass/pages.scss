@@ -1,0 +1,66 @@
+@import "./utils/variable";
+@import "./base/fonts";
+@import "./components/button";
+@import "./layouts/contents";
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-right: 30px;
+    & a{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        & .fas{
+            @include return;
+        }
+    }
+    & div{
+        margin-left: 0px;
+    }
+}
+#menu__drawning{
+    width: 100%;
+    height: 300px;
+    & img{
+        @include menu__drawning__img;
+    }
+}
+#menu{
+    @include menu--background;
+    & header{
+        width: 100%;
+        margin: 0px;
+        & h2{
+            @include menu__title;
+        }
+    }
+}
+.dishes{
+    @include dishes__background;
+    & .menu__title{
+        @include menu__title--font;
+    }
+    & .menu__bloc{
+        @include menu__bloc__background;
+        & .menu__bloc__text{
+            padding: 16px;
+            width: 80%;
+            & h3{
+                font-size: 18px;
+            }
+            & p{
+                font-size: 14px;
+            }
+        }
+        & .menu__bloc__price{
+            @include price__background;
+        }
+    }
+}
+#menu__footer{
+    background-color: $grey--light;
+    width: 50%;
+}

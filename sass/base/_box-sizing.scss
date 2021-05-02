@@ -1,0 +1,33 @@
+body{
+    height: auto;
+    width: 100%;
+    margin: 0px;
+}
+#menu__drawning{
+    width: 100%;
+    height: 300px;
+}
+#menu{
+    width: 100%;
+    & header{
+        width: 100%;
+        margin: 0px;
+    }
+    & .dishes{
+        width: 90%;
+        margin: 20px;
+        height: 340px;
+        & .menu__bloc{
+            width: 100%;
+            & .menu__bloc__text{
+                padding: 16px;
+                width: 80%;
+            }
+            & .menu__bloc__price{
+                width: 20%;
+                height: 80%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

@@ -1,22 +1,18 @@
 @import "./utils/variable";
-@import "./base/fonts";
-@import "./components/button";
-@import "./layouts/contents";
 
-body{
-    height: auto;
-}
-#header__logo{
-    width: 150px;
-    height: 40px;
-}
-header div{
-    display:flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-}
+@import "./base/reset";
+@import "./base/box-sizing";
+@import "./base/fonts";
+@import "./base/img";
+
+@import "./components/button";
+
+@import "./layouts/contents";
+@import "./layouts/header";
+@import "./layouts/article";
+@import "./layouts/footer";
+
+
 #searchbar{
     @include searchbar__background;
 }
@@ -90,25 +86,6 @@ input::placeholder{
             }
         }
     }
-}
-
-#footer__logo{
-    width: 100px;
-    height: 30px;
-    fill: $white !important;
-}
-footer{
-    @include footer__background;
-   & p , a{
-    color: $white;
-   }
-   & div{
-       display: flex;
-       flex-flow: row nowrap;
-       & .fas{
-           margin-right: 10px;
-       }
-   }
 }
 
 

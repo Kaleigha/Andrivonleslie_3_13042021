@@ -1,0 +1,24 @@
+#footer__logo{
+    width: 100px;
+    height: 30px;
+    fill: $white !important;
+}
+footer{
+    padding: 30px;
+    background-color: lighten($text--color,20%);
+    color: $white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 180px;
+   & p , a{
+    color: $white;
+   }
+   & div{
+       display: flex;
+       flex-flow: row nowrap;
+       & .fas{
+           margin-right: 10px;
+       }
+   }
+}

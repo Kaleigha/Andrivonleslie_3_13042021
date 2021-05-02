@@ -1,0 +1,39 @@
+/* Index */
+#header__logo{
+    width: 150px;
+    height: 40px;
+}
+#header__index div{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+
+/* Pages */
+
+#header__pages{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-right: 30px;
+    height: 100px;
+    & a{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        & .fas{
+            font-size: 25px;
+        }
+    }
+    & div{
+        margin-left: 0px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

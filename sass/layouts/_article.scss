@@ -1,0 +1,57 @@
+#menu{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto; 
+    background-color: $grey--light;
+    & header{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center; 
+        & h2{
+            font-size: 30px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            width: 70%;
+        }
+    }
+    & .dishes{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        & .menu__bloc{
+            background-color: $white;
+            border-radius: 20px;
+            height: auto;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            box-shadow: 2px 2px 10px $grey--dark;
+            & .menu__bloc__text{
+                & h3{
+                    font-size: 18px;
+                }
+                & p{
+                    font-size: 14px;
+                }
+            }
+            & .menu__bloc__price{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: flex-end;
+                font-weight: bold;
+            }
+        }
+    }
+    & #menu__footer{
+        background-color: $grey--light;
+        width: 50%;
+    }
+}
